@@ -1,10 +1,11 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
 
-export const defaultCharacter: Character = {
+export const defaultCharacter = {
     name: "Eliza",
     username: "eliza",
     plugins: [],
-    modelProvider: ModelProviderName.LLAMALOCAL,
+    modelProvider: "openai",
+    model: "gpt-4o-mini",
     settings: {
         secrets: {},
         voice: {
